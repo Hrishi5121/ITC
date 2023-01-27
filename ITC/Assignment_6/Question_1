@@ -1,0 +1,14 @@
+def is_perfect(num):
+
+    add = 0
+
+    for i in range(1,num):
+
+        if num % i == 0:
+            add += i
+
+    return num == add
+    
+num = int(input("Enter the num : "))
+
+print(is_perfect(num))
